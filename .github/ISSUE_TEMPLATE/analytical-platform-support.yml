@@ -45,5 +45,9 @@ body:
     attributes:
       label: Acknowledge
       options:
-        - label: I have read the documentation
+        - label: I have searched the documentation and cannot find a solution.
+          required: true
+        - label: I have searched for a similar issue in both open and closed issues and cannot find one.
+          required: true
+        - label: I acknowledge that the DPAT team are not responsible for the code deployed in applications on the platform and this is the responsibility of the application owner.
           required: true
