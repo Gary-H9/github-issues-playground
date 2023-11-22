@@ -60,7 +60,7 @@ body:
     attributes:
       label: Logs 
       options:
-        - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/apps/rshiny-app.html#kibana-on-cloud-platform) which are provided below.
+        - label: I have searched the logs which are provided below.
           required: true
   - type: textarea
     id: logs-output
