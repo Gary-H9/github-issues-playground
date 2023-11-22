@@ -49,9 +49,9 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: acknowledge
+    id: acknowledge-2
     attributes:
-      label: Acknowledge
+      label: Acknowledge-2
       options:
         - label: I have searched the logs which are provided below.
           required: true
