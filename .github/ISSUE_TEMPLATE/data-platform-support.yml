@@ -53,7 +53,6 @@ body:
     attributes:
       label: Screenshot
       description: Please include a screenshot. This will help us to understand the issue.
-      placeholder: Take a screenshot and drag/attach it here.
   - type: checkboxes
     id: logs
     attributes:
@@ -66,10 +65,8 @@ body:
     attributes:
       label: Logs Output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      placeholder: Copy relevant log output here.
       render: bash
   - type: textarea
     attributes:
       label: Logs Hyperlink
-      description: A hyperlink to the location of the logs. 
-      placeholder: Please add a hyperlink to any referenced logs.
+      description: Please add a hyperlink to any referenced logs below.
