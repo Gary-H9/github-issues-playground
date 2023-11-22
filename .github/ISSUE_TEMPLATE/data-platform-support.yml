@@ -58,7 +58,7 @@ body:
     attributes:
       label: Logs 
       options:
-        - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) which are provided below.
+        - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/apps/manage-app-settings-from-cpanel.html#introduction-to-the-settings) which are provided below.
           required: true
   - type: textarea
     id: logs-output
