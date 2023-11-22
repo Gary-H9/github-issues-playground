@@ -1,14 +1,26 @@
 ---
-name: Data Platform Support Request
-description: Request support from the Data Platform team
+name: Analytical Platform Support Request
+description: Request support from the Analytical Platform team
 title: "Brief description of your issue"
-labels: ["dp-support", "triage"]
+labels: ["ap-support", "triage"]
 assignees:
   - moj-data-platform-robot
 body:
+  - type: checkboxes
+    id: acknowledge
+    attributes:
+      label: Acknowledge
+      options:
+        - label: I have searched the [user guidance](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) and cannot find a solution.
+          required: true
+        - label: I have searched for a similar [issue](https://github.com/ministryofjustice/data-platform-support/issues) and cannot find one.
+          required: true
+        - label: I acknowledge that the Data Platform Apps and Tools team are not responsible for the code deployed in applications on the platform and this is the responsibility of the application owner.
+          required: true
   - type: markdown
     attributes:
       value: |
+        🔎 Check for a solution in our user guidance [here](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html), search GitHub [here](https://github.com/ministryofjustice/data-platform-support/issues?q=is%3Aissue), or the support channel [here](https://mojdt.slack.com/archives/C4PF7QAJZ)
         Thanks for taking the time to fill out this support request form!
   - type: dropdown
     id: tool
@@ -16,10 +28,18 @@ body:
       label: Which tool do you need help with?
       multiple: true
       options:
-        - GitHub
         - Amazon Web Services
-        - MoJ Cloud Platform
-        - MoJ Modernisation Platform
+        - Application Migration Support
+        - Auth0
+        - Control Panel
+        - Database Access
+        - JupyterLab
+        - RStudio
+        - S3
+        - User and Account
+        - Not applicable
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -28,9 +48,17 @@ body:
       placeholder: Tell us what you see, but don't include any sensitive information
     validations:
       required: true
+  - type: checkboxes
+    id: acknowledge
+    attributes:
+      label: Acknowledge
+      options:
+        - label: I have searched the logs which are provided below.
+          required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: bash
+
