@@ -1,5 +1,5 @@
 ---
-name: Analytical Platform Support Request
+name: Data Platform Support Request
 description: Request support from the Analytical Platform team
 title: "Brief description of your issue"
 labels: ["ap-support", "triage"]
