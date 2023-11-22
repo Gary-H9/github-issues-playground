@@ -45,26 +45,26 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
+      description: What did you expect to happen?
       placeholder: Tell us what you see, but don't include any sensitive information
     validations:
       required: true
   - type: checkboxes
     id: logs
     attributes:
-      label: 📝 Logs 
+      label: Logs 
       options:
         - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) which are provided below.
           required: true
   - type: textarea
     id: logs-output
     attributes:
-      label: Logs outputs
+      label: Logs Output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       placeholder: Copy relevant log output here.
       render: bash
   - type: textarea
     attributes:
-      label: 🔗 Log hyperlink
+      label: Logs Hyperlink
       description: A hyperlink to the location of the logs. 
       placeholder: Please add a hyperlink to any referenced logs.
