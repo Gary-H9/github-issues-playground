@@ -52,19 +52,19 @@ body:
   - type: checkboxes
     id: logs
     attributes:
-      label: Logs
+      label: 📝 Logs 
       options:
         - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) which are provided below.
           required: true
   - type: textarea
     id: logs-output
     attributes:
-      label: Log output
+      label: Logs outputs
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       placeholder: Copy relevant log output here.
       render: bash
   - type: textarea
     attributes:
-      label: Log hyperlink
+      label: 🔗 Log hyperlink
       description: A hyperlink to the location of the logs. 
       placeholder: Please add a hyperlink to any referenced logs.
