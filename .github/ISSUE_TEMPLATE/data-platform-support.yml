@@ -1,6 +1,6 @@
 ---
 name: Data Platform Support Request
-description: Request support from the Analytical Platform team
+description: Request support from the Data Platform team
 title: "Title of your issue"
 labels: ["ap-support", "triage"]
 assignees:
