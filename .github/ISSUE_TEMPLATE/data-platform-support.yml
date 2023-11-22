@@ -61,7 +61,8 @@ body:
       label: Log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: bash
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
-        Include a hyperlink to logs here if possible.
+      label: Log hyperlink
+      description: A hyperlink to the location of the logs. 
+      placeholder: Please add a hyperlink to any referenced logs.
