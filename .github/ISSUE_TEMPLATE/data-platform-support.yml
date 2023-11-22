@@ -19,7 +19,7 @@ body:
           required: true
         - label: I have searched for a similar [issue](https://github.com/ministryofjustice/data-platform-support/issues) and cannot find one.
           required: true
-        - label: I acknowledge that the Data Platform Apps and Tools team are not responsible for the _application code_ deployed on the Data Platform and this is the responsibility of the application owner. I have already contacted the application owner and they have confirmed that this is not an application issue.
+        - label: I acknowledge that the Data Platform Apps and Tools team are not responsible for the _application code_ deployed on the Cloud Platform and this is the responsibility of the application owner. I have already contacted the application owner and they have confirmed that this is not an application issue.
           required: true
         - label: I have not included sensitive information in this request.
           required: true
@@ -45,8 +45,7 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: What did you expect to happen?
-      placeholder: Tell us what you see, but don't include any sensitive information
+      description: Tell us what you see, but don't include any sensitive information.
     validations:
       required: true
   - type: textarea
