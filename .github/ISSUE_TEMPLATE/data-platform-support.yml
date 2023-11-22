@@ -14,7 +14,7 @@ body:
   - type: checkboxes
     id: acknowledge
     attributes:
-      label: Acknowledge
+      label: Acknowledgements
       options:
         - label: I have searched the [user guidance](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) and cannot find a solution.
           required: true
@@ -56,7 +56,7 @@ body:
         - label: I have searched the [logs](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) which are provided below.
           required: true
   - type: textarea
-    id: logs
+    id: logs-output
     attributes:
       label: Log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
