@@ -21,6 +21,8 @@ body:
           required: true
         - label: I acknowledge that the Data Platform Apps and Tools team are not responsible for the _application code_ deployed on the Data Platform and this is the responsibility of the application owner. I have already contacted the application owner and they have confirmed that this is not an application issue.
           required: true
+        - label: I have not included sensitive information in this request.
+          required: true
   - type: dropdown
     id: tool
     attributes:
