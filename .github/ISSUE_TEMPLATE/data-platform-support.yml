@@ -53,7 +53,7 @@ body:
     id: screenshot
     attributes:
       label: Screenshot
-      description: Please include a screenshot
+      description: Please include a screenshot. This will help us to understand the issue.
       placeholder: Take a screenshot and drag/attach it here.
   - type: checkboxes
     id: logs
