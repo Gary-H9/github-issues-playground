@@ -49,6 +49,12 @@ body:
       placeholder: Tell us what you see, but don't include any sensitive information
     validations:
       required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Please include a screenshot
+      placeholder: Take a screenshot and drag/attach it here.
   - type: checkboxes
     id: logs
     attributes:
