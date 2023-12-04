@@ -21,8 +21,10 @@ jobs:
         
       - name: Check for pinned versions in package.json
         run: |
-          if grep -E '"[^"]+": "([^"]*[\^~])' package.json; then
-            echo "Unpinned dependencies found in package.json"
+          UNPINNED=$(grep -E '"[^"]+": "([^"]*[\^~])' package.json)
+          if [ ! -z "$UNPINNED" ]; then
+            echo "Unpinned dependencies found in package.json:"
+            echo "$UNPINNED"
             exit 1
           fi
   
