@@ -1,0 +1,20 @@
+name: Enforce Version Pinning
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  check-version-pinning:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Check for pinned versions in requirements.txt
+        run: |
+          if grep -v '==' requirements.txt; then
+            echo "Unpinned dependencies found in requirements.txt"
+            exit 1
+          fi
