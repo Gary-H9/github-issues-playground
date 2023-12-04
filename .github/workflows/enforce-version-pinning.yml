@@ -18,3 +18,11 @@ jobs:
             echo "Unpinned dependencies found in requirements.txt"
             exit 1
           fi
+        
+      - name: Check for pinned versions in package.json
+        run: |
+          if grep -E '"[^"]+": "[^"]*[\^~]?' package.json; then
+            echo "Unpinned dependencies found in package.json"
+            exit 1
+          fi
+  
