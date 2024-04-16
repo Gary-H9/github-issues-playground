@@ -11,3 +11,13 @@ body:
       value:
     validations:
       required: true
+  - type: select
+    id: dropdown
+    attributes:
+      label: Select an option
+      options:
+        - Low 
+        - Medium
+        - High
+    validations:
+      required: true
