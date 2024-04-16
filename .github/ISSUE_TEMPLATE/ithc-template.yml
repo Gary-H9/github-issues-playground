@@ -1,0 +1,13 @@
+name: ITHC
+description: 👮 Create an ITHC Issue
+title: "👮 <title>"
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      description: A clear and concise description of what the issue is.
+      label: Describe the issue.
+      value:
+    validations:
+      required: true
