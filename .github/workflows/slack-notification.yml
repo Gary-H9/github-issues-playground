@@ -25,7 +25,13 @@ jobs:
         with:
           payload: |
             {
-              "repository": "${{ github.repository }}"
+              "repository": "${{ github.repository }}",
+              "server_url": "${{ github.server_url }}",
+              "run_id": "${{ github.run_id }}",
+              "job": "${{ github.job }}",
+              "workflow": "${{ github.workflow }}",
+              "ref": "${{ github.ref }}",
+              "sha": "${{ github.sha }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
