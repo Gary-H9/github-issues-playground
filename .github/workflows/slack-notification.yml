@@ -25,7 +25,7 @@ jobs:
         with:
           payload: |
             {
-              "repository": "test-repo"
+              "repository": "${{ github.repository }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
