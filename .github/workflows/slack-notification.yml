@@ -13,6 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Extract PR number from commit message
+        id: extract_pr
+        run: |
+          PR_NUMBER=$(git log -1 --pretty=%B | grep -oP 'Merge pull request #\K\d+')
+          echo "PR_NUMBER=$PR_NUMBER" >> $GITHUB_ENV
+          echo "::set-output name=pr_number::$PR_NUMBER"
+
       - name: Force Failure
         id: force_failure
         run: |
@@ -29,7 +36,8 @@ jobs:
               "run_id": "${{ github.run_id }}",
               "pull_request": "${{ github.event.pull_request.html_url }}",
               "event_number": "${{ github.event.number }}",
-              "ref": "${{ github.ref }}"
+              "ref": "${{ github.ref }}",
+              "pr_number": "${{ steps.extract_pr.outputs.pr_number }}"
             }
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
