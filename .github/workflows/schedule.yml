@@ -1,7 +1,7 @@
 name: Weekly Team Sync
 on:
   schedule:
-    - cron: 25 14 * * 3
+    - cron: 32 13 * * 3 # UTC time: 14:25 on Wednesday
 
 jobs:
   create_issue:
