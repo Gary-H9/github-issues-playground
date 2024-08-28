@@ -1,7 +1,7 @@
 name: 📥 Ingestion Maintenance Patching
 on:
   schedule:
-    - cron: 35 14 * * 3 # UTC time: 14:25 on Wednesday
+    - cron: 55 14 * * 3 # UTC time: 14:25 on Wednesday
 
 jobs:
   create_issue:
@@ -34,8 +34,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           TITLE: 📥 Ingestion Maintenance Patching
-          ASSIGNEES: Gary-H9
-          LABELS: bug
+          ASSIGNEES:
+          LABELS:
           BODY: |
             ### User Story
 
