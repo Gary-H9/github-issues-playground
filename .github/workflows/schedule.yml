@@ -1,16 +1,16 @@
 name: Weekly Team Sync
 on:
   schedule:
-    - cron: 58 13 * * 3 # UTC time: 14:25 on Wednesday
+    - cron: 04 14 * * 3 # UTC time: 14:25 on Wednesday
 
 jobs:
   create_issue:
-    name: Create team sync issue
+    name: Patch Schedule
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
-      - name: Create team sync issue
+      - name: patch schedule
         run: |
           if [[ $CLOSE_PREVIOUS == true ]]; then
             previous_issue_number=$(gh issue list \
@@ -34,7 +34,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           TITLE: Team sync
-          ASSIGNEES: monalisa,doctocat,hubot
+          ASSIGNEES: Gary-H9
           LABELS: bug
           BODY: |
             ### Agenda
