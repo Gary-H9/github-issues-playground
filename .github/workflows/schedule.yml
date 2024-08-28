@@ -1,7 +1,7 @@
 name: Weekly Team Sync
 on:
   schedule:
-    - cron: 32 13 * * 3 # UTC time: 14:25 on Wednesday
+    - cron: 45 13 * * 3 # UTC time: 14:25 on Wednesday
 
 jobs:
   create_issue:
@@ -35,7 +35,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           TITLE: Team sync
           ASSIGNEES: monalisa,doctocat,hubot
-          LABELS: weekly sync,docs-team
+          LABELS: dependabot
           BODY: |
             ### Agenda
 
