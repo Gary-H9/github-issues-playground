@@ -45,22 +45,19 @@ body:
   - type: textarea
     id: dag
     attributes:
-      label: DAG
-      description: What is the name of the DAG in question?
+      label: What is the name of the DAG in question?
     validations:
       required: true
   - type: textarea
     id: repository
     attributes:
-      label: repository
-      description: Please provide a link to the repository in question.
+      label: Please provide a link to the repository in question.
     validations:
       required: true
   - type: textarea
     id: image-tag
     attributes:
-      label: image-tag
-      description: What is the last known working image tag (if one exists)?
+      label: What is the last known working image tag (if one exists)?
     validations:
       required: true
   - type: checkboxes
