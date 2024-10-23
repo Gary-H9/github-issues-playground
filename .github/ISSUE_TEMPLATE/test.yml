@@ -1,0 +1,82 @@
+---
+name: 💨 Raise an Airflow Support Issue
+description: Request support from the Analytical Platform team relating to an issue with Airflow
+title: "Title of your issue"
+labels: ["triage", "airflow"]
+assignees:
+  - moj-data-platform-robot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this support request form. 
+        Please fill out the sections below and we will get back to you as soon as possible. 
+        Where possible try not to include any sensitive information.
+  - type: checkboxes
+    id: acknowledge
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I have searched the [user guidance](https://user-guidance.analytical-platform.service.justice.gov.uk/get-started.html) and cannot find a solution.
+          required: true
+        - label: I have searched for a similar [issue](https://github.com/ministryofjustice/data-platform-support/issues) and cannot find one.
+          required: true
+        - label: I acknowledge that the Analytical Platform team are not responsible for the _application code_ deployed on the Cloud Platform and this is the responsibility of the application owner. I have already contacted the application owner and they have confirmed that this is not an application issue.
+          required: true
+        - label: I have not included sensitive information in this request.
+          required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Which environment are you working in?
+      multiple: true
+      options:
+        - development
+        - production
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what you see, but don't include any sensitive information.
+    validations:
+      required: true
+  - type: textarea
+    id: dag
+    attributes:
+      label: DAG
+      description: What is the name of the DAG in question?
+    validations:
+      required: true
+  - type: textarea
+    id: repository
+    attributes:
+      label: repository
+      description: Please provide a link to the repository in question.
+    validations:
+      required: true
+  - type: textarea
+    id: image-tag
+    attributes:
+      label: image-tag
+      description: What is the last known working image tag (if one exists)?
+    validations:
+      required: true
+  - type: checkboxes
+    id: logs
+    attributes:
+      label: Logs 
+      options:
+        - label: I have searched the logs which are provided below.
+          required: true
+  - type: textarea
+    id: logs-output
+    attributes:
+      label: Logs Output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+  - type: textarea
+    attributes:
+      label: Logs Hyperlink
+      description: Please add a hyperlink to any referenced logs below.
