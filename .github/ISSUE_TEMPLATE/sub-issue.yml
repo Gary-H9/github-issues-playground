@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Note: This template should only be used for sub-tasks.**
+        > [!TIP]
+        > Optional information to help a user be more successful.
   - type: textarea
     id: description
     attributes:
