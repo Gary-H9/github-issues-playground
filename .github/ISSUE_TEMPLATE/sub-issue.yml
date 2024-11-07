@@ -3,6 +3,10 @@ description: Create a Sub-Task
 title: "📋 <title>"
 labels: ["sub-task"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        **Note: This template should only be used for sub-tasks.**
   - type: textarea
     id: description
     attributes:
@@ -24,12 +28,5 @@ body:
     attributes:
       description: Steps to address the sub-task.
       label: Steps to Address
-      placeholder: 1. Identify the problem
-
-                  2. Develop a solution
-
-                  3. Implement the solution
-
-                  4. Test the implementation
     validations:
       required: false
