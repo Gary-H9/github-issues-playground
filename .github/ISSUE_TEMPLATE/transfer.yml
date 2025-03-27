@@ -1,5 +1,5 @@
 name: 🤝 Transfer
-description: test 
+description: Raise a request to onboard to the Transfer Service.
 title: " 🤝 <title>"
 labels: ["triage", "transfer-access-request"]
 body:
@@ -14,6 +14,7 @@ body:
     id: supplier-email
     attributes:
       label: Supplier Email
+      description: Please provide the email address of the supplier.
       value:
     validations:
       required: true
@@ -21,6 +22,7 @@ body:
     id: supplier-ip
     attributes:
       label: Supplier IP Address
+      description: Please provide the IP address of the supplier's server.
       value:
     validations:
       required: true
@@ -28,6 +30,7 @@ body:
     id: supplier-key
     attributes:
       label: Supplier SSH Key
+      description: Please provide the public key for the supplier's SSH key. Information on how to generate a public key can be found [here](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key.).
       value:
     validations:
       required: true
@@ -35,7 +38,7 @@ body:
     id: supplier-target-location
     attributes:
       label: Supplier Target Location
-      description: Specify the target location where the data will be transferred (e.g. s3://${TARGET_BUCKET}/${OPTIONAL_PREFIX})).
+      description: Specify the target location where the data will be transferred (e.g. `s3://${TARGET_BUCKET}/${OPTIONAL_PREFIX}`).
       value:
     validations:
       required: true
