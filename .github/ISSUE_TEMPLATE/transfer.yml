@@ -1,0 +1,43 @@
+name: 🤝 Transfer
+description: 
+title: " 🤝 <title>"
+labels: ["triage", "transfer-access-request"]
+type: ""
+labels: ["Transfer"]
+body:
+  - type: input
+    id: supplier-name
+    attributes:
+      label: Supplier Name
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: supplier-email
+    attributes:
+      label: Supplier Email
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: supplier-ip
+    attributes:
+      label: Supplier IP Address
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: supplier-key
+    attributes:
+      label: Supplier SSH Key
+      value:
+    validations:
+      required: true
+  - type: textarea
+    id: supplier-target-location
+    attributes:
+      label: Supplier Target Location
+      description: Specify the target location where the data will be transferred (e.g. s3://${TARGET_BUCKET}/${OPTIONAL_PREFIX})).
+      value:
+    validations:
+      required: true
