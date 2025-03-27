@@ -2,8 +2,6 @@ name: 🤝 Transfer
 description: 
 title: " 🤝 <title>"
 labels: ["triage", "transfer-access-request"]
-type: ""
-labels: ["Transfer"]
 body:
   - type: input
     id: supplier-name
