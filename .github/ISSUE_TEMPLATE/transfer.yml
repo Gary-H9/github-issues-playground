@@ -10,7 +10,7 @@ body:
       value:
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: supplier-email
     attributes:
       label: Supplier Email
@@ -18,7 +18,7 @@ body:
       value:
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: supplier-ip
     attributes:
       label: Supplier IP Address
@@ -26,7 +26,7 @@ body:
       value:
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: supplier-key
     attributes:
       label: Supplier SSH Key
@@ -34,7 +34,7 @@ body:
       value:
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: supplier-target-location
     attributes:
       label: Supplier Target Location
