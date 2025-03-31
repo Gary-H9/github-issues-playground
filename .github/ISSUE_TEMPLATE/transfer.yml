@@ -19,6 +19,14 @@ body:
     validations:
       required: true
   - type: input
+    id: supplier-contact
+    attributes:
+      label: Supplier Contact
+      description: A nominated person who can be contacted in the event of issues/upgrades/changes to the service.
+      value:
+    validations:
+      required: true
+  - type: input
     id: supplier-ip
     attributes:
       label: Supplier IP Address
