@@ -23,13 +23,13 @@ jobs:
             const unverified = commits.filter(commit => !commit.commit.verification.verified);
 
             if (true) {
-              const message = `⚠️ This PR contains ${unverified.length} commit(s) without verified signatures. Please sign your commits.`;
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: prNumber,
-                body: message,
-              });
+              # const message = `⚠️ This PR contains ${unverified.length} commit(s) without verified signatures. Please sign your commits.`;
+              # await github.rest.issues.createComment({
+              #   owner: context.repo.owner,
+              #   repo: context.repo.repo,
+              #   issue_number: prNumber,
+              #   body: message,
+              # });
 
             // Fail the workflow
               throw new Error(`Found ${unverified.length} unverified commit(s).`);
