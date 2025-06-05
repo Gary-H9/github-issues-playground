@@ -31,3 +31,7 @@ jobs:
                 body: message,
               });
             }
+
+            // Fail the workflow
+              throw new Error(`Found ${unverified.length} unverified commit(s).`);
+            }
