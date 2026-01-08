@@ -1,5 +1,5 @@
 asgiref==3.7.2
-Authlib==1.2.1
+Authlib==1.6.6
 certifi==2023.11.17
 cfgv==3.4.0
 Django==4.2.11
